@@ -126,6 +126,8 @@ class App(object):
             print(" - Exit                                CTRL + C")
 
     def __read_configs(self):
+        self.configs()
+        
         osu = open(f"{config_path}\.osupath", "r")
         osu_path = osu.read()
         osu.close()
